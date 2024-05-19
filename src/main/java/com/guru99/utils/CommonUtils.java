@@ -1,5 +1,7 @@
 package com.guru99.utils;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -7,9 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonUtils {
 
-	public static boolean waitForElement(WebDriver driver, WebElement element, int maxWait) {
+	public static boolean waitForElement(WebDriver driver, WebElement element, Duration i) {
 		boolean statusOfElementToBeReturned = false;
-		WebDriverWait wait = new WebDriverWait(driver, maxWait);
+		WebDriverWait wait = new WebDriverWait(driver, i);
 
 		try {
 			WebElement waitElement = wait.until(ExpectedConditions.visibilityOf(element));

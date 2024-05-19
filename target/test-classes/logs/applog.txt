@@ -1,0 +1,2 @@
+INFO    2024-05-19 00:36:07,256 [main] com.retail.testscripts.regression.Suite1.TestLogs  - This is the information log
+ERROR   2024-05-19 00:36:07,258 [main] com.retail.testscripts.regression.Suite1.TestLogs  - Here the error logs will be printed

@@ -1,5 +1,7 @@
 package com.guru99.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,7 +41,7 @@ public class HomePage extends LoadableComponent<HomePage> {
 		if(!isPageLoaded)
 			Assert.fail();
 		
-		if(isPageLoaded & CommonUtils.waitForElement(driver, homeBanner, 3)) {
+		if(isPageLoaded & CommonUtils.waitForElement(driver, homeBanner, Duration.ofSeconds(10))) {
 			
 		}
 	}

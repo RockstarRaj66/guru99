@@ -39,4 +39,5 @@ public class RegressionSuite01 extends BaseTests {
 		  Assert.assertEquals(actualTitle, expectedTitle);
 		 
 	}
+	
 }

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\RAJKMURU\AppData\Local\Temp\testng-eclipse--1408128279\testng-customsuite.xml</span>
+                    <span>C:\Users\RAJKMURU\AppData\Local\Temp\testng-eclipse--705664279\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,14 +128,37 @@
                   <a name="verifyUserLoginWithCorrectCredentials">
                   </a> <!-- verifyUserLoginWithCorrectCredentials -->
                   <span class="method-name">verifyUserLoginWithCorrectCredentials</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Guru99 Bank Manager Home page] but found [Guru99 Bank Manager HomePage]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.retail.testscripts.regression.Suite1.RegressionSuite01.verifyUserLoginWithCorrectCredentials(RegressionSuite01.java:39)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b573d52aeca0fd571124ff6466d991, findElement {using=name, value=uid}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57397}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57397/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b573d52aeca0fd571124ff6466d991
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
+	at com.guru99.utils.CommonUtils.setText(CommonUtils.java:42)
+	at com.guru99.pages.LoginPage.loginToGuru99(LoginPage.java:29)
+	at com.retail.testscripts.regression.Suite1.RegressionSuite01.verifyUserLoginWithCorrectCredentials(RegressionSuite01.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,7 +193,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\RAJKMURU\AppData\Local\Temp\testng-eclipse--1408128279\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\RAJKMURU\AppData\Local\Temp\testng-eclipse--705664279\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,12 +246,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyUserLoginWithCorrectCredentials')
 data.setCell(0, 2, 'com.retail.testscripts.regression.Suite1.RegressionSuite01')
-data.setCell(0, 3, 1256);
+data.setCell(0, 3, 114);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 114 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -261,25 +284,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">206 ms</span>
+                <span class="method-start">231 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyUserLoginWithCorrectCredentials</span>
-                <span class="method-start">6170 ms</span>
+                <span class="method-start">3295 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">postTestAction([TestResult name=verifyUserLoginWithCorrectCredentials status=FAILURE method=RegressionSuite01.verif...)</span>
-                <span class="method-start">7435 ms</span>
+                <span class="method-start">3416 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">7663 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">7979 ms</span>
+                <span class="method-start">3494 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
