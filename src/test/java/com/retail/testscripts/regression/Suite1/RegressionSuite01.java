@@ -1,26 +1,22 @@
 package com.retail.testscripts.regression.Suite1;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
 import com.guru99.pages.LoginPage;
 import com.guru99.utils.CommonUtils;
-
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class RegressionSuite01 extends BaseTests {
 	
 	String username;
 	String password;
 	
-	
 	public void Testsetup() { 
 	   username = configProperty.getProperty("username");
 	   password = configProperty.getProperty("password"); 
 	}
-	 
-	
 	
 	@Test()
 	public void verifyUserLoginWithCorrectCredentials() {
@@ -38,6 +34,14 @@ public class RegressionSuite01 extends BaseTests {
 		  reportUtils.addTestLog(Status.INFO, "Comparing expected and actual title");
 		  Assert.assertEquals(actualTitle, expectedTitle);
 		 
+	}
+	
+	@Test()
+	public void tc02() {
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.quit();
 	}
 	
 }
